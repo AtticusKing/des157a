@@ -1,16 +1,27 @@
 html {
     scroll-behavior: smooth;
-    background-color: #372554;
+    background-color: #7BD51F;
 }
 
-body {
-    background-color: white;
-    max-width: 800px;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+
+ .content {
+    max-width: 1100px;
     margin: auto;
+    background-color: white;
   }
+
+main {
+    position: absolute;
+    top: 225px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: white;
+}
 
   @keyframes body {
     0%   {background-color:#DDD78D;}
@@ -27,30 +38,28 @@ img {
     height: auto;
 }
 
-p, h1, h2, h3 {
+p{
     margin: 0;
     padding: 0;
-    color: #193740;
-    }
+}
 
 h2 {
     font-family: 'Bebas Neue', sans-serif;
     color: #414042;
-    font-size: small;
+    font-size: 1;
     padding-left: 20px;
     padding-top: 20px;
 }
 
 #banner {
-    position: absolute;
-    padding: 20px;
+    position: relative;
     z-index: 3;
-    top: 30px;
+    top: 20px;
 }
 
 #portal {
-   position: absolute;
-   top: 40px;
+   position: relative;
+   top: -90px;
    left: 40%;
    z-index: 1;
    transform: 1;
@@ -58,32 +67,36 @@ h2 {
 }
 
 #portal:hover {
-    transform: scale(1.2);
+    transform: scale(.8);
     transition-duration: 1s;
     transition-timing-function: ease;
 }
 #flex1 {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 0;
+    flex-basis:50%;
 }
 
 #flex2 {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 0;
+    flex-basis:50%;
 }
 
 #flex3 {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 0;
+    flex-basis:50%;
 }
 
 #flex4 {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 0;
+    flex-basis:50%;
 }
 
 #flex1 ul {
@@ -118,34 +131,38 @@ h2 {
 }
 
 .left {
-    position: absolute;
-    top: 200px;
-    margin: auto;
+    margin: 0;
+    top: -375px;
+
+    
     display: flex;
     flex-direction: column;
+    flex-basis: calc(100%/4);
+}
+
+.middle {
+    flex-basis: calc(100%/2);
 }
 
 .right {
-    margin: auto;
-    position: relative;
-    top: 150px;
-    width: 100%;
+    margin: 0;
+    top:-375px;
+
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    flex-basis: calc(100%/4);
 }
 
 h3 {
     font-family: 'Comic Neue', cursive;
     color: #193740;
-    font-size: 1em;
-    padding-bottom: 5px;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
     font-family: 'Comic Neue', cursive;
     color: #42B4CA;
-    font-size: 1em;
     margin: 0;
     padding: 0;
 }
@@ -156,7 +173,7 @@ a:link { text-decoration: none;
 a:visited { text-decoration: none; 
     color: #388B96}
 a:hover { text-decoration: none;
-    color: 388B96;
+    color: #388B96;
 }
 a:active { text-decoration: none; 
     color: #42B4CA}
@@ -164,11 +181,10 @@ a:active { text-decoration: none;
 footer {
     font-family: 'Bebas Neue', sans-serif;
     color: #414042;
-    font-size: small;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-size: 1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 
