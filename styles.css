@@ -15,7 +15,7 @@ body{
     background-color: white;
   }
 
-main {
+.oldmain {
     z-index: 10;
     margin: 0;
     position: absolute;
@@ -59,15 +59,16 @@ header{
     text-align: center;
 }
 
+.title {transition: all .2s ease-in-out;}
+
+.title:hover {
+    transform: scale(1.1);
+}
+
 #banner {
     position: relative;
     z-index: 3;
     top: 20px;
-    transition: all .2s ease-in-out;
-}
-
-#banner:hover {
-    transform: scale(1.1);
 }
 
 #portal {
@@ -231,6 +232,8 @@ footer {
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
+    right: 30px;
+    top: 10px;
 
 }
 
@@ -261,7 +264,152 @@ footer {
     top: 17px;
 }
 
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 475px) {
+   
+    #portal {
+        width: 100%;
+        left: 0%;
+     }
+
+     #banner {
+        width: 100%;
+        left: 0%;
+     }
+    
+    #banner {
+        transform: scale(.8);
+    }
+
+    #rick {
+        transform: scale(.8);
+        z-index: 14;
+        top: -70px;
+        left: 20px;
+    }
+
+    #portal {
+        transform: scale(.8);
+    }
+    
+    h2 {
+        transform: scale(.8);
+    }
+    
+    .head {
+        transform: scale(.9);
+        top: -420px;
+    }
+
+    .portal {
+        transform: scale(.8);
+    }
+
+    .larm {
+        display: none;
+    }
+
+    footer{
+        transform: scale(.8);
+        position: relative;
+        top: 320px;
+    }
+
+    .oldmain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        top: 425px;
+    }
+
+    #flex1 {
+        text-align: center;
+        align-items: center;
+    }
+
+    #flex2 {
+        padding-top: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    #flex3 {
+        padding-top: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    #flex4 {
+        padding-top: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    #flex3 ul {
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width:475px) and (max-width: 600px) {
+    h2 {
+        transform: scale(.8);
+    }
+
+    footer{
+        transform: scale(.8);
+    }
+    
+    #banner {
+        transform: scale(.8);
+    }
+
+    #rick {
+        transform: scale(.8);
+        z-index: 14;
+        top: -70px;
+        left: 20px;
+    }
+
+    #portal {
+        transform: scale(.8);
+    }
+
+    #portal {
+        width: 100%;
+        left: 0%;
+     }
+
+     #banner {
+        width: 100%;
+        left: 0%;
+     }
+
+     #flex1 {
+        align-items: flex-end;
+        text-align: right;
+     }
+
+     #flex2 {
+        padding-top: 30px;
+        align-items: flex-end;
+     }
+
+     #flex3 {
+        align-items: flex-start;
+        text-align: left;
+     }
+
+     #flex4 {
+        padding-top: 30px;
+        align-items: flex-start;
+        text-align: left;
+     }
+}
+
+@media only screen and (min-width:600px) and (max-width: 900px) {
     #portal {
         width: 100%;
         left: 0%;
