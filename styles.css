@@ -1,10 +1,11 @@
 html {
     scroll-behavior: smooth;
-    background-color: #7BD51F;
+    background-color: white;
 }
 
 body{
     margin: 0;
+    
 }
 
  .content {
@@ -27,14 +28,6 @@ main {
     justify-content:space-between;
     background-color: white;
 }
-
-  @keyframes body {
-    0%   {background-color:#DDD78D;}
-    25%  {background-color:#55868C;}
-    50%  {background-color:#DD7230;}
-    75%  {background-color:#372554;}
-    100% {background-color:#582B11;}
-  }
 
 img {
     display: block;
@@ -72,16 +65,11 @@ header{
    position: relative;
    top: -90px;
    left: 40%;
-   z-index: 1;
+   z-index: 2;
    transform: 1;
    
 }
 
-#portal:hover {
-    transform: scale(.8);
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
 #flex1 {
     display: flex;
     flex-direction: column;
@@ -196,9 +184,58 @@ footer {
     text-align: center;
     margin: 0;
     padding: 0;
-    padding-bottom: 30px;
+    margin-top:40px;
 }
 
+.head{
+    z-index: 5;
+    position: relative;
+    margin: auto;
+    top: -440px;
+}
+
+.larm{
+    z-index: 4;
+    position: relative;
+    margin: auto;
+    top: -568px;
+    left: -130px;
+    margin-bottom: -400px;
+
+}
+
+#rick {
+    position: absolute;
+    margin: auto;
+    margin-bottom: -400px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+
+}
+
+.larm {animation: wavingArm 3s ease-in-out infinite;
+    top: -566px;
+    left: -110px;
+    position: relative;
+    width: 230px;
+    height: auto;
+    transform-origin: right;
+    margin-bottom: -400px;
+}
+
+@keyframes wavingArm {
+	0% { 
+		transform: rotate(6deg) translate(0px);
+	}
+	50% { 
+		transform: rotate(-20deg) translate(0px);
+	}
+	100% { 
+		transform: rotate(6deg) translate(0px);
+	}
+}
 
 @media only screen and (min-width: 600px) {
     #portal {
