@@ -16,6 +16,7 @@ body{
   }
 
 main {
+    z-index: 10;
     margin: 0;
     position: absolute;
     top: 245px;
@@ -25,7 +26,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    background-color: white;
 
     left: 0; 
     right: 0; 
@@ -63,6 +63,11 @@ header{
     position: relative;
     z-index: 3;
     top: 20px;
+    transition: all .2s ease-in-out;
+}
+
+#banner:hover {
+    transform: scale(1.1);
 }
 
 #portal {
@@ -127,16 +132,6 @@ header{
     flex-direction: column;
 }
 
-.left ul {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.right ul {
-    list-style-type: none;
-    text-decoration: none;  
-}
-
 .left {
     margin: 0;
     top: -375px;
@@ -172,6 +167,8 @@ ul {
     color: #42B4CA;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    text-decoration: none;  
 }
 
 
@@ -185,6 +182,20 @@ a:hover { text-decoration: none;
 a:active { text-decoration: none; 
     color: #42B4CA}
 
+a {
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        color: #54b3d6;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+        box-shadow: inset 200px 0 0 0 #54b3d6;
+        color: white;
+}
+
+
 footer {
     font-family: 'Bebas Neue', sans-serif;
     color: #414042;
@@ -196,14 +207,14 @@ footer {
 }
 
 .head{
-    z-index: 5;
+    z-index: 12;
     position: relative;
     margin: auto;
     top: -440px;
 }
 
 .larm{
-    z-index: 4;
+    z-index: 11;
     position: relative;
     margin: auto;
     top: -568px;
