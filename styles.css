@@ -80,6 +80,18 @@ header{
    
 }
 
+.cap {
+    position: absolute;
+    z-index: 8;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    left: 0;
+    bottom: 330px;
+    right: -15px;
+    margin: auto;
+}
+
 #flex1 {
     display: flex;
     flex-direction: column;
@@ -351,6 +363,20 @@ footer {
     #flex3 ul {
         align-items: center;
     }
+
+    .cap {
+        transform: scale(.7);
+        position: absolute;
+        z-index: 8;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        left: 0;
+        bottom: 464px;
+        right: -20px;
+        margin: auto;
+        display: none;
+    }
 }
 
 @media only screen and (min-width:475px) and (max-width: 600px) {
@@ -406,6 +432,10 @@ footer {
         padding-top: 30px;
         align-items: flex-start;
         text-align: left;
+     }
+
+     .cap {
+        display: none;
      }
 }
 
