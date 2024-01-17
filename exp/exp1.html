@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Open the Console to Check</h2>
+
+    <script>
+
+        var userWord = prompt("Enter a word", "");
+
+        function reverseString(str) {
+            return str.split('').reverse().join('');
+        }
+        var reversedWord = reverseString(userWord);
+
+        console.log(`${reversedWord}`);
+
+    </script>
+
+    <!-- This script takes any user provided word and reverses its characters -->
+    
+    <!-- first the user is prompted to enter a word which is then split, reversed and joined back together, to remove commas
+    between letters I needed to put ''
+    The now reversed word is then turned into a variable to be logged in the console. -->
+</body>
+
+</html>
