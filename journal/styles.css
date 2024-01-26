@@ -4,9 +4,21 @@ html {
     
 }
 
+body {
+    background-color: #C7EAFE;
+}
+
 
 main {
     background-color: white;
+    margin: auto;
+}
+
+article {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
     margin: auto;
 }
 
@@ -65,4 +77,115 @@ p {
     top: 50px;
 
     font-family: 'Comic Neue', cursive;
+}
+
+.note {
+    -webkit-box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.17);
+-moz-box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.17);
+box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.17);
+
+position: relative;
+top: -325px;
+z-index: -10;
+}
+
+.a1 {
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    top: 206px;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    left: 25px;
+
+}
+
+#link1 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 710px;
+    
+    
+
+}
+
+#link2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 900px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+#title1 {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    font-family: 'Comic Neue', cursive;
+    top: 190px;
+    margin: auto;
+    text-align: center;
+    left: -60px;
+}
+
+
+#p2{
+    top: 250px;
+}
+
+
+.button {
+    width: 110px;
+    background-color: #C11274;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px; 
+  }
+
+article a {
+    font-family: 'Comic Neue', cursive;
+    
+}
+
+article a:link { text-decoration: none; 
+    color: white}
+
+article a:visited { text-decoration: none; 
+    color: white}
+
+article a:hover { text-decoration: none;
+    color: white;
+}
+article a:active { text-decoration: none; 
+    color: white}
+
+.button:hover {
+    background-color: #89155A;
 }
