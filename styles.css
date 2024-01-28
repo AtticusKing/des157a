@@ -34,6 +34,7 @@ img {
     max-width: 100%;
     margin: auto;
     height: auto;
+    pointer-events: none;
 }
 
 p{
