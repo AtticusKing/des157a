@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h2>You entered such a <a id="wordType" href="#">stupid</a> word!</h2>
+        <div id="banner">
+        <img class="title" src="../images/expTitle2.png" alt="Experiments Title 2" width="578" height="150">
+        </div>
+        <p><a href="../index.html">Return to Portal</a></p>
+
+
+        <article>
+            <p id="articleP">
+                Look, your word is backwards now:
+            </p>
+            <p id="backwards">
+                word
+            </p>
+        </article>
+    </main>
+
+    <script>
+
+        var userWord = prompt("Enter a word", "");
+
+        function reverseString(str) {
+            return str.split('').reverse().join('');
+        }
+        var reversedWord = reverseString(userWord);
+
+        console.log(`${reversedWord}`);
+
+/* I've made it so that the reversed word appears on the HTML now */
+
+        document.getElementById("backwards").innerHTML = `${reversedWord}`;
+
+
+
+
+/* this function and loop changes a word in the top sentence to a random adjective from the list */
+
+        function randomInt(min, max){
+        var numOfValues = max - min + 1;
+        var randomNum = Math.random();
+        var randomVal = numOfValues * randomNum;
+        var roundedRandomVal = Math.floor(randomVal);
+        var finalVal = min + roundedRandomVal;
+
+        return finalVal;
+        }
+         
+        var word = ["funny", "bad", "stupid", "great", "sad", "crazy"];
+        var anchors = document.getElementsByTagName('a');
+
+		for( var i=0; i<anchors.length; i++){
+			var link = anchors[i].getAttribute('href');
+
+			if( link === "#"){
+				anchors[i].innerHTML = `${word[randomInt(0, 5)]}`;
+			}
+		}
+ 
+
+    </script>
+
+    <!-- This script takes any user provided word and reverses its characters -->
+    
+    <!-- first the user is prompted to enter a word which is then split, reversed and joined back together, to remove commas
+    between letters I needed to put ''
+    The now reversed word is then turned into a variable to be logged in the console and put on the document. -->
+</body>
+
+</html>

@@ -66,3 +66,28 @@ p {
 
     font-family: 'Comic Neue', cursive;
 }
+
+
+#articleP {
+    position: relative;
+    top: 85px;
+    width: 250px;
+    height: 15px;
+    padding: 25px;
+    
+}
+
+#backwards {
+    color: white;
+    background-color: #42B4CA;
+    font-weight: bold;
+    font-size: 2em;
+    border-radius: 12px;
+    border: 2px solid #193740;
+    /* border: 2px solid #C0DE42; */
+    
+    position: relative;
+    top: 75px;
+    width: 250px;
+    padding: 15px;
+}
