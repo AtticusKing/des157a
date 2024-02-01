@@ -103,6 +103,20 @@ z-index: -10;
 
 }
 
+.a2 {
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    top: 55px;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    left: 25px;
+
+}
+
 #link1 {
     position: absolute;
     margin: 0;
@@ -111,7 +125,7 @@ z-index: -10;
     right: 0;
     margin: auto;
     text-align: center;
-    top: 710px;
+    top: 515px;
     
     
 
@@ -125,7 +139,21 @@ z-index: -10;
     right: 0;
     margin: auto;
     text-align: center;
-    top: 900px;
+    top: 710px;
+}
+
+#link3 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 370px;
+    
+    
+
 }
 
 h3 {
@@ -145,6 +173,19 @@ h3 {
     position: relative;
     font-family: 'Comic Neue', cursive;
     top: 190px;
+    margin: auto;
+    text-align: center;
+    left: -60px;
+}
+
+#title2 {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    font-family: 'Comic Neue', cursive;
+    top: 40px;
     margin: auto;
     text-align: center;
     left: -60px;
@@ -188,4 +229,22 @@ article a:active { text-decoration: none;
 
 .button:hover {
     background-color: #89155A;
+}
+
+#section1 {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 1500px;
+
+}
+
+
+#section2 {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 800px;
 }
