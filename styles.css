@@ -34,7 +34,6 @@ img {
     max-width: 100%;
     margin: auto;
     height: auto;
-    pointer-events: none;
 }
 
 p{
@@ -242,6 +241,7 @@ footer {
     margin-right: auto;
     right: 30px;
     top: 10px;
+    pointer-events: none;
 
 }
 
