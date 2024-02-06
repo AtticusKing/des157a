@@ -129,6 +129,9 @@ myForm.addEventListener('submit', function (event){
         }
         
         else {
+
+            document.querySelector('#overlay').className = "showing";
+
             myText = `Reviews for the new hit movie "${verb1} in ${place}" have been pouring in, and it seems like audiences are ${verb2} between enthusiasm and ${emotion}. Some of the more enthusiastic ${number}-star reviews praise the film's ${adjective1} twist when the main character is revealed to be a ${noun1}. While those who didn't like it are angrily pointing their ${noun2} at the lead actor, a woman named ${name} Mc${word}. Critics claim her ${verb3} was a bit too "over-the-${noun3}" and that she should stick to ${movie} instead of action films. The evil mastermind, a ${adjective2} man, is being criticized for his menacing laughter, which some describe as more ${adjective3} than “scary." All-in-all, it seems ${noun4} and ${noun5} are the keys to cinematic success, leaving audiences wondering if they've just witnessed the birth of a new genre: the ${verb4} blockbuster.`;
             document.querySelector('#verb1').value = '';
             document.querySelector('#place').value = '';
@@ -148,32 +151,16 @@ myForm.addEventListener('submit', function (event){
             document.querySelector('#noun4').value = '';
             document.querySelector('#noun5').value = '';
             document.querySelector('#verb4').value = '';
-            
-            document.querySelector('#submit').addEventListener('click', function (event) {
-                event.preventDefault();
-                document.querySelector('#overlay').className = "showing";
-            });
-    
-            document.addEventListener('keydown', function (event) {
-                if (event.key === 'Escape') {
-                    document.querySelector('#overlay').className = "hidden";
-                }
-            });
+
+            myArticle.innerHTML = myText;
         }
-
-        myArticle.innerHTML = myText;
+        
     });
-
-        /* if (verb1 && place && verb2 && emotion && number && adjective1 && noun1 && noun2 && name && word && verb3 && noun3 && movie && adjective2 && adjective3 && noun4 && noun5 && verb4){
-        document.querySelector('.myForm').addEventListener('click', function (event) {
-            event.preventDefault();
-            document.querySelector('#overlay').className = "showing";
-        });
 
         document.addEventListener('keydown', function (event) {
             if (event.key === 'Escape') {
                 document.querySelector('#overlay').className = "hidden";
             }
-        }); */
+        });
 
 })();
