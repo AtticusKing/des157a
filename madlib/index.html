@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=News+Cycle:wght@400;700&family=Saira+Extra+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="madlib.js" defer></script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+    <section class="home">
+
+        <header>
+            <div class="topwriting">
+
+                <p class="leftheader">02.03.2024 / Saturday</p>
+
+                <p class="rightheader">#235934826</p>
+
+            </div>
+
+            <div class="blackstripe"></div>
+        </header>
+
+        <h1>Mad Lib News</h1>
+
+        <div id="bluestripe"></div>
+
+        <p id="subheader">Recently in the city of Mad Libs, multiple fires broke out across- actually wait, fill out
+            these boxes first and
+            then we’ll finish this talk.</p>
+
+
+        <div id="myGrid">
+            <form id="myForm">
+
+                <div id="flex1">
+                    <input type="text" placeholder="Verb" id="verb1">
+
+                    <input type="text" placeholder="Place" id="place">
+
+                    <input type="text" placeholder="Verb ending in -ing" id="verb2">
+
+                    <input type="text" placeholder="Emotion ending in -ness" id="emotion">
+
+                    <input type="text" placeholder="Number" id="number">
+
+                    <input type="text" placeholder="Adjective" id="adjective1">
+                </div>
+
+                <div id="flex2">
+                    <input type="text" placeholder="Noun" id="noun1">
+
+                    <input type="text" placeholder="Plural body part" id="noun2">
+
+                    <input type="text" placeholder="Name of someone" id="name">
+
+                    <input type="text" placeholder="Goofy word" id="word">
+
+                    <input type="text" placeholder="Verb ending in -ing" id="verb3">
+
+                    <input type="text" placeholder="noun" id="noun3">
+
+                </div>
+
+                <div id="flex3">
+                    <input type="text" placeholder="Movie genre" id="movie">
+
+                    <input type="text" placeholder="Adjective" id="adjective2">
+
+                    <input type="text" placeholder="Adjective" id="adjective3">
+
+                    <input type="text" placeholder="Plural noun" id="noun4">
+
+                    <input type="text" placeholder="Plural noun" id="noun5">
+
+                    <input type="text" placeholder="Verb" id="verb4">
+
+                </div>
+            </form>
+
+            <div id="flex4">
+                <input type="submit" form="myForm" value="submit" id="submit">
+
+                <p id="pagetag">Page 2</p>
+            </div>
+
+            <div id="last">
+                <div id="yellowbox">
+                    <h4 id="yellowtitle">DID YOU KNOW THAT...</h4>
+                    <p id="yellowparagraph">The first movie ever made was a three-hour epic silent film about a talking
+                        giraffe. Audiences were so
+                        mesmerized by the groundbreaking FX that they believed the giraffe was actually speaking, making
+                        it a
+                        cinematic marvel of its time... actually I made that up, would’ve been cool though.</p>
+                </div>
+
+                <p id="lowerparagraph">As I was saying: Multiple fires broke out across the downtown area, leaving a
+                    trail of destruction in their wake.
+                    The devastating blaze, which started on Adjective Avenue, quickly spread to nearby verb factories
+                    and grammar
+                    schools. Firefighters struggled to contain the inferno as it tragically consumed the iconic Noun
+                    Park. The
+                    once-vibrant cityscape is now marred by the somber remnants of a linguistic catastrophe. Very sad.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="overlay" class="hidden">
+
+        <header>
+            <div class="topwriting">
+
+                <p class="leftheader">02.03.2024 / Saturday / #235934826</p>
+
+                <div id="rightoverlay">
+                    <div class="rightheader">
+                        <p>Volume 52 / Est. 2001</p>
+                    </div>
+
+                    <div id="red2">
+                        <p>2</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="blackstripe"></div>
+        </header>
+
+
+        <div id="entertainmentbar">
+            <div id="blue1"></div>
+            <h3 id="redtain">Entertainment</h3>
+            <h3>News</h3>
+            <div id="blue2"></div>
+        </div>
+
+
+        <h2>The Movie Review</h2>
+
+        <div>
+
+            <article>
+                <p id="madlib">Reviews for the new hit movie "${verb1} in ${place}" have been pouring in, and it seems like
+                    audiences are ${verb2} between enthusiasm and ${emotion}. Some of the more enthusiastic
+                    ${number}-star reviews praise the film's ${adjective1} twist when the main character is revealed to
+                    be a ${noun1}. While those who didn't like it are angrily pointing their ${noun2} at the lead actor,
+                    a woman named ${name} Mc${word}. Critics claim her ${verb3} was a bit too "over-the-${noun3}" and
+                    that she should stick to ${movie} instead of action films. The evil mastermind, a ${adjective2} man,
+                    is being criticized for his menacing laughter, which some describe as more ${adjective3} than
+                    “scary." All-in-all, it seems ${noun4} and ${noun5} are the keys to cinematic success, leaving
+                    audiences wondering if they've just witnessed the birth of a new genre: the ${verb4} blockbuster.
+                </p>
+            </article>
+
+            <img src="images/midPicture.png" alt="digital film" width="1301px" height="1238px" id="picture">
+
+            <h3 id="genre">A New Genre?</h3>
+
+        </div>
+
+        <div id="topblack"></div>
+        <div id="bottomblack"></div>
+
+        <footer>
+
+            <div id="footflex">
+                <div id="footinfo">
+                    <p>Web page designed and coded by Atticus King</p>
+                    <address>
+                        Contact: <a
+                            href="mailto:&#097;&#116;&#116;&#107;&#105;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#097;&#116;&#116;&#107;&#105;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a>
+                    </address>
+                </div>
+
+                <img src="images/coupon.png" alt="coupon" width="1190px" height="229px" id="coupon">
+
+                <img src="images/barcode.png" alt="barcode" width="559px" height="224px" id="barcode">
+            </div>
+
+        </footer>
+
+    </section>
+</body>
+
+</html>
