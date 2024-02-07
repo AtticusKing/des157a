@@ -117,6 +117,20 @@ z-index: -10;
 
 }
 
+.a3 {
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    top: -20px;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    left: 25px;
+
+}
+
 #link1 {
     position: absolute;
     margin: 0;
@@ -151,9 +165,17 @@ z-index: -10;
     margin: auto;
     text-align: center;
     top: 400px;
-    
-    
+}
 
+#link4 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 225px;
 }
 
 h3 {
@@ -189,6 +211,19 @@ h3 {
     margin: auto;
     text-align: center;
     left: -60px;
+}
+
+#title3 {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    font-family: 'Comic Neue', cursive;
+    top: -34px;
+    margin: auto;
+    text-align: center;
+    left: -25px;
 }
 
 
@@ -247,4 +282,17 @@ article a:active { text-decoration: none;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 800px;
+}
+
+#section3 {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50px;
+}
+
+#mainArticle{
+    position: relative;
+    top: 600px;
 }
