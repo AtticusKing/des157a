@@ -2,6 +2,7 @@
 /* because the image is large, you don't want to do anything 
 in this script, until  you are sure the image has loaded. */
 window.addEventListener('load', function () {
+    'use strict';
 
 	//define variables needed
 	const posts = document.querySelectorAll('section');
@@ -76,7 +77,6 @@ window.addEventListener('load', function () {
 
 
 window.addEventListener('load', function () {
-    'use strict';
     // Add JS here
 
     const sections = document.querySelectorAll('section');
@@ -120,11 +120,6 @@ window.addEventListener('load', function () {
 
 
     function onSectionChange(){
-        //changing page color using transitions
-        const style = `bgcolor${counter}`;
-        document.querySelector('body').className = style;
-
-
         // Change classes on the section...
         for( const eachPost of sections){
         eachPost.className = 'offscreen';
