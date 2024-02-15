@@ -15,6 +15,7 @@ window.addEventListener('load', function () {
 	//see below for what this function does
 	resetPagePosition();
 
+
 	/* Everything in this event handler runs everytime the window 
 	is scrolled just a little bit. Be careful about preformance */
 	window.addEventListener('scroll', function () {
@@ -36,8 +37,49 @@ window.addEventListener('load', function () {
 		if (counter != prevCounter) {
 			// changes the class name on the image, which activates animation...
 			document.querySelector('figure img').className = 'picture' + counter;
+            document.querySelector('#extra').className = 'stars' + counter;
 			prevCounter = counter;
+
+/* The caption from the HTML file are broken up into an
+	array so that one part of the caption can be shown at at
+	time, depending on which section is on the screen. */
+	const captions = [
+		// captions[0] is empty because counter starts at 1
+		'',
+        '',
+        '<img src="images/Caran.png" alt="Image 2" width="10px">',
+		'<img src="images/Castan.png" alt="Image 1" width="10px">',  
+        '<img src="images/Paibu.png" alt="Image 3" width="10px">',
+        '<img src="images/Eurus.png" alt="Image 4" width="10px">'
+    ];
+
+	let figCaption = document.querySelector('figcaption');
+
+	// Set the first caption for when the screen loads...
+	figCaption.innerHTML = captions[1];
+            
+// animates the caption off the top of the screen
+figCaption.className = 'exit';
+
+// this event handler runs when the CSS animation finishes
+figCaption.addEventListener('animationend', function () {
+    // Clone the figcaption
+    let newCaption = document.querySelector('figcaption').cloneNode(true);
+    // remove the original figcaption
+    figCaption.remove();
+    // add a class name to the new fig caption (the one that was cloned)
+    newCaption.className = 'enter';
+    // change the caption based on which section is on the screen
+    newCaption.innerHTML = captions[counter];
+    // put the new caption on the page
+    document.querySelector('figure').appendChild(newCaption);
+    // reassign the figCaption variable
+    figCaption = document.querySelector('figcaption');
+});
+            
 		}
+
+        
 
 	}); // end window scroll function
 

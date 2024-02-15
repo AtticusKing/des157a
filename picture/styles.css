@@ -5,11 +5,13 @@
 body {
 	font-family: Arial;
 	color: #333;
+    font-family: "ocr-a-std", monospace;
+    max-width: 1200px;
 }
 
 main {
     position: relative;
-    margin-left: 200px;
+    margin-left: 250px;
 
     z-index: 10;
 }
@@ -17,6 +19,84 @@ main {
 p {
 	line-height: 1.5em;
 }
+
+#fig1{
+    display: block;
+	margin: 0;
+    height: 100%;
+	width: 100%;
+	position: fixed;
+	top:0;
+	right:0;
+
+    z-index: 6;
+}
+
+div img {
+    top: -100px;
+    width: 100%;
+    height: auto;
+	position: absolute;
+    transition: all 3s ease;
+
+    z-index: 6;
+}
+
+
+#orbit1 {
+    position: absolute;
+    top: -100px;
+}
+
+
+figure figcaption{
+	width:453.3px;
+    height: 256px;
+	position: absolute;
+	left: 65%;
+	top: 105%;
+	transform: translateX(-50%);
+}
+
+.start {
+	top: 105%;
+}
+
+.enter {
+	animation-name: movein;
+	animation-delay: .5s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000);	
+}
+
+.exit {
+	animation-name: moveout;
+	animation-duration: 700ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335);
+}
+
+@keyframes movein {
+	0%{
+		top: 105%;
+	}
+	100% {
+		top: 50%;
+	}
+}
+
+@keyframes moveout {
+	0%{
+		top: 50%;
+	}
+	100% {
+		top: -20%;
+	}
+}
+
+
+
 
 figure {
 	display: block;
@@ -54,15 +134,15 @@ figure img {
 
 .picture3 {
     top: 10%;
-    left: -10%;
-    transform: scale(1.4);
+    left: -60%;
+    transform: scale(2.2);
     transition: 3s ease;
 }
 
 .picture4 {
 	top: -10%;
     left: 0%;
-    transform: scale(1.5);
+    transform: scale(2.3);
     transition: 3s ease;
 }
 
@@ -84,7 +164,6 @@ figure img {
 section {
     box-sizing: border-box;
     /* border: 5px solid #d3e019; */
-    border-radius: 10px;
     margin: 50px;
     padding: 20px;
     height: calc(100vh - 200px);
@@ -98,6 +177,7 @@ section {
 .offscreen {
     border: 5px solid white;
     background-color: rgba(159, 232, 255, .4);
+    border-radius: 3px;
 
     width: 200px;
 	padding: 20px;
@@ -111,10 +191,61 @@ section {
 .onscreen {
     border: 5px solid white;
     background-color: rgba(159, 232, 255, .4);
+    border-radius: 10px;
 
     width: 300px;
 	padding: 20px;
 
     left: 50%;
     transform:translateX(-50%);
+}
+
+
+#star1 {
+    position: relative;
+    top: 500px;
+    left: 300px;
+}
+
+
+
+
+
+
+
+
+.stars1{
+    top: -10%;
+    left: 0%;
+    transform: scale(1);
+    transition: 3s ease;
+
+}
+
+.stars2 {
+    top: -68%;
+    left: 35%;
+    transform: scale(1.6);
+    transition: 3s ease;
+}
+
+.stars3 {
+    top: -40%;
+    left: -60%;
+    transform: scale(1.9);
+    transition: 3s ease;
+}
+
+.stars4 {
+	top: -5%;
+    left: -32%;
+    transform: scale(2.3);
+    transition: 3s ease;
+}
+
+.stars5 {
+    top: 50%;
+    left: 0%;
+    transform: scale(1.7);
+    transition: 3s ease;
 }
