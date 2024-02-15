@@ -42,61 +42,10 @@ div img {
     z-index: 6;
 }
 
-
 #orbit1 {
     position: absolute;
     top: -100px;
 }
-
-
-figure figcaption{
-	width:453.3px;
-    height: 256px;
-	position: absolute;
-	left: 65%;
-	top: 105%;
-	transform: translateX(-50%);
-}
-
-.start {
-	top: 105%;
-}
-
-.enter {
-	animation-name: movein;
-	animation-delay: .5s;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	animation-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000);	
-}
-
-.exit {
-	animation-name: moveout;
-	animation-duration: 700ms;
-	animation-fill-mode: forwards;
-	animation-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335);
-}
-
-@keyframes movein {
-	0%{
-		top: 105%;
-	}
-	100% {
-		top: 50%;
-	}
-}
-
-@keyframes moveout {
-	0%{
-		top: 50%;
-	}
-	100% {
-		top: -20%;
-	}
-}
-
-
-
 
 figure {
 	display: block;
