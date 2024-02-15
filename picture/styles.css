@@ -8,12 +8,14 @@ body {
 }
 
 main {
-	width: 30vw;
-	padding: 20px;
+    position: relative;
+    margin-left: 200px;
+
+    z-index: 10;
 }
 
 section {
-	height: 100vh;
+	height: 100%;
 }
 
 p {
@@ -23,58 +25,49 @@ p {
 figure {
 	display: block;
 	margin: 0;
-	width: 70vw;
-	height: 100vh;
+    height: 100%;
+	width: 100%;
 	position: fixed;
 	top:0;
 	right:0;
-	overflow: hidden;
+
+    z-index: 5;
 }
 
 figure img {
+	width: 100%;
+    height: auto;
 	position: absolute;
 	transition: all 3s ease;
 }
 
-.sect1{
-	width: 147vh; /*147% the height of the image is the width ratio*/
+.picture1{
 	top:0;
 	left: 50%;
 	transform:translateX(-50%);
 }
 
-.sect2,
-.sect3,
-.sect4,
-.sect5,
-.sect6{
-    width: 3768px;
-}
-
-.sect2 {
+.picture2 {
     top: 0;
-    left: 0;
+    left: 15%;
+    transform: scale(1.4);
 }
 
-.sect3 {
-    top: 0;
-    left: calc(-3768px + 70vw);
+.picture3 {
+    top: -10%;
+    right: 20%;
+    transform: scale(1.5);
+
 }
 
-.sect4 {
+.picture4 {
 	top: calc(-2567px + 100vh);
-    left: 0;
-}
-
-.sect5 {
-    top: calc(-2567px + 100vh);
-    left: calc(-3768px + 70vw);
-}
-
-.sect6 {
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+.picture5 {
+    top: calc(-2567px + 100vh);
+    left: 50%;
 }
 
 
@@ -90,19 +83,30 @@ section {
     display: grid;
     place-content: center;
     text-align: center;
-    transition: all 1s;
+    transition: all .5s;
+    color: white;
 }
 
-.bgcolor1 { background-color: #f8edcb; transition: all 1s;}
-.bgcolor2 { background-color: #eaf8cb; transition: all 1s;}
-.bgcolor3 { background-color: #cbeef8; transition: all 1s;}
-.bgcolor4 { background-color: #dfcbf8; transition: all 1s;}
-.bgcolor5 { background-color: #f8cbe4; transition: all 1s;}
-
 .offscreen {
-    border: 5px solid #d3e019;
+    border: 5px solid white;
+    background-color: rgba(159, 232, 255, .4);
+
+    width: 200px;
+	padding: 20px;
+
+    left: 50%;
+    transform:translateX(-50%);
+
+    font-size: .5em;
 }
 
 .onscreen {
-    border: 5px solid #f40c9f;
+    border: 5px solid white;
+    background-color: rgba(159, 232, 255, .4);
+
+    width: 300px;
+	padding: 20px;
+
+    left: 50%;
+    transform:translateX(-50%);
 }
