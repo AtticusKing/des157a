@@ -38,6 +38,7 @@ window.addEventListener('load', function () {
 			// changes the class name on the image, which activates animation...
 			document.querySelector('figure img').className = 'picture' + counter;
             document.querySelector('#extra').className = 'stars' + counter;
+            document.querySelector('#more').className = 'extra' + counter;
 			prevCounter = counter;
 		}
 
