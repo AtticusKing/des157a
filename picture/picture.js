@@ -3,6 +3,7 @@
 in this script, until  you are sure the image has loaded. */
 window.addEventListener('load', function () {
     'use strict';
+    console.log('reading js');
 
 	//define variables needed
 	const posts = document.querySelectorAll('section');
