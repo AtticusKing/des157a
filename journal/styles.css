@@ -306,12 +306,6 @@ article a:active { text-decoration: none;
     top: 500px;
 }
 
-#mainArticle{
-    position: relative;
-    top: 1350px;
-}
-
-
 .a4 {
     max-width: 400px;
     text-align: left;
@@ -357,4 +351,54 @@ article a:active { text-decoration: none;
     margin: auto;
     text-align: center;
     left: -70px;
+}
+
+#mainArticle{
+    position: relative;
+    top: 2100px;
+}
+
+.a6 {
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    top: 30px;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    left: 25px;
+}
+
+#section5 {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -1500px;
+}
+
+#title5 {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    font-family: 'Comic Neue', cursive;
+    top: 20px;
+    margin: auto;
+    text-align: center;
+    left: -70px;
+}
+
+#link5 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 325px;
 }
