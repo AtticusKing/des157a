@@ -24,6 +24,13 @@ div {
     background-color: silver;
 }
 
+#game2 {
+    background-color:#eaeaea;
+}
+#actions2 {
+    background-color: silver;
+}
+
 h1 {
     margin: 0;
     padding: 0;
@@ -43,7 +50,7 @@ h2 {
 }
 
 main {
-    width: 400px;
+    width: 500px;
     margin: 0;
     padding: 0;
     margin: auto;
@@ -56,6 +63,10 @@ main {
     border-width: 5px;
     margin: 0;
     margin-top: 60px;
+}
+
+main p {
+    margin: 20px;
 }
 
 #gamecontrol #startgame {
@@ -87,18 +98,24 @@ main {
     flex-direction: row;
     flex: 1 1 0;
     width: 1200px;
+    height: 600px;
 }
 
-#player1 {
-    width: 400px;
+#players {
+    width: 700px;
     padding: 0;
     margin: 0;
     margin-top: 60px;
 }
 
-#player2 {
-    width: 400px;
-    padding: 0;
-    margin: 0;
-    margin-top: 60px;
+
+.gray {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 40px;
 }
