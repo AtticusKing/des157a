@@ -4,9 +4,14 @@
 
     const startGame = document.querySelector('#startgame');
     const gameControl = document.querySelector('#gamecontrol');
+
     const game = document.querySelector('#game');
-    const score = document.querySelector('#score');
+    const game2 = document.querySelector('#game2');
+
     const actionArea = document.querySelector('#actions');
+    const actionArea2 = document.querySelector('#actions2');
+
+    const score = document.querySelector('#score');
 
 
     const gameData = {
@@ -49,8 +54,7 @@ startGame.addEventListener("click", function(){
     gameData.index = Math.round(Math.random());
     //console.log(gameData.index);
 
-    gameControl.innerHTML = '<h2>The Game Has Started</h2>';
-    gameControl.innerHTML += '<button id="quit">Wanna Quit?</button>';
+    gameControl.innerHTML = '<button id="quit">QUIT</button>';
 
     document.getElementById('quit').addEventListener("click", function(){
         location.reload();
