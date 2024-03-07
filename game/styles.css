@@ -17,9 +17,6 @@ div {
     background-color: white;
 }
 
-#game {
-    /* background-color:#eaeaea; */
-}
 #actions {
     /* background-color: silver; */
     display: flex;
