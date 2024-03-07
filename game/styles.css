@@ -51,7 +51,7 @@ h2 {
 
 }
 
-main {
+article {
     width: 500px;
     margin: 0;
     padding: 0;
@@ -67,7 +67,7 @@ main {
     margin-top: 60px;
 }
 
-main p {
+article p {
     margin: 20px;
 }
 
