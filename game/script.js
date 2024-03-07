@@ -13,6 +13,8 @@
 
     const score = document.querySelector('#score');
 
+    const button = document.querySelector('button');
+
     const gameData = {
         dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 'images/4die.png', 'images/5die.png', 'images/6die.png'],
         players: ['player 1', 'player 2'],
@@ -23,7 +25,31 @@
         index: 0,
         gameEnd: 29
     };
+
+    const lowSound = new Audio('sounds/low.mp3');
+    const highSound = new Audio('sounds/high.mp3');
+    const celebrateSound = new Audio('sounds/celebrate.mp3');
+    const sadSound = new Audio('sounds/sad.mp3');
+    const squeakSound = new Audio('sounds/squeak.mp3');
     
+
+
+
+    gameControl.addEventListener('mousedown', function() {
+        highSound.play();
+    });
+
+    actionArea.addEventListener('mousedown', function() {
+        lowSound.play();
+    });
+
+    
+
+
+
+
+
+
 
 /*     //This gets the current player: 
 gameData.players[gameData.index]
@@ -57,6 +83,7 @@ startGame.addEventListener("click", function(){
 
     document.getElementById('quit').addEventListener("click", function(){
         location.reload();
+        sadSound.play();
     });
     //console.log("set up the turn!");
     setUpTurn();
@@ -89,6 +116,7 @@ function throwDice(){
         gameData.score[gameData.index] = 0;
         gameData.index ? (gameData.index = 0) : (gameData.index = 1);
         
+        sadSound.play();
         showCurrentScore();
         //show the current score
         setTimeout(setUpTurn, 2000);
@@ -99,6 +127,8 @@ function throwDice(){
     else if(gameData.roll1 === 1 || gameData.roll2 === 1){
         gameData.index ? (gameData.index = 0) : (gameData.index = 1);
         game.innerHTML += '<p>Sorry, one of your rolls was a one. Switching players...</p>';
+
+        squeakSound.play();
         setTimeout(setUpTurn, 2000);
     } //end of either dice is a 1.
 
@@ -109,10 +139,12 @@ function throwDice(){
         actionArea.innerHTML = '<button id="rollagain">Roll again</button> <div></div> <button id = "pass">Pass</button>';
 
         document.getElementById('rollagain').addEventListener('click', function(){
+            
             setUpTurn();
         });
 
         document.getElementById('pass').addEventListener('click', function(){
+            squeakSound.play();
             gameData.score[gameData.index] += 3;
             showCurrentScore();
 
@@ -132,6 +164,7 @@ function checkWinningCondition(){
     if(gameData.score[gameData.index] > gameData.gameEnd){
         score.innerHTML = `<h4>${gameData.players[gameData.index]}
         wins with ${gameData.score[gameData.index]} points!</h4>`;
+        celebrateSound.play();
 
         actionArea.innerHTML = '';
         document.getElementById('quit').innerHTML = "Restart";
@@ -139,6 +172,7 @@ function checkWinningCondition(){
     else {
         //show current score...
         showCurrentScore();
+        
     }
 } //end check win
 
