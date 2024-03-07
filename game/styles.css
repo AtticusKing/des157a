@@ -18,10 +18,12 @@ div {
 }
 
 #game {
-    background-color:#eaeaea;
+    /* background-color:#eaeaea; */
 }
 #actions {
-    background-color: silver;
+    /* background-color: silver; */
+    display: flex;
+    flex-direction: column;
 }
 
 #game2 {
@@ -118,4 +120,52 @@ main p {
     font-size: 24px;
     font-weight: bold;
     padding-bottom: 40px;
+}
+
+img {
+    width: 200px;
+}
+
+
+#rollagain {
+    background-color: greenyellow;
+    color: black;
+    width: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+    border-width: 5px;
+    margin: auto;
+}
+
+#pass {
+    background-color: white;
+    color: black;
+    width: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+    border-width: 5px;
+    margin: auto;
+}
+
+#roll {
+    background-color: greenyellow;
+    color: black;
+    width: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+    border-width: 5px;
+    margin: auto;
+}
+
+#game {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
 }
