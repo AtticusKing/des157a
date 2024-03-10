@@ -1,0 +1,29 @@
+html {
+    background-color: lightgray;
+}
+
+section {
+    max-width: 600px;
+    background-color: white;
+    padding: 50px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    max-width: 415px;
+    text-align: center;
+}
+
+
+
+img {
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    
+}
