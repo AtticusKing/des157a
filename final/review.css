@@ -1,0 +1,12 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    max-width: 415px;
+    background-color: white;
+    padding: 50px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+}
