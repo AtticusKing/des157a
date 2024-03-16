@@ -43,9 +43,6 @@ window.addEventListener('load', function () {
             document.querySelector('#button').className = 'button' + counter;
 			prevCounter = counter;
 		}
-
-        
-
 	}); // end window scroll function
 
 	// this event handler fires while the window is being resized
@@ -71,9 +68,7 @@ window.addEventListener('load', function () {
 		counter = 0;
 
 		postTops.forEach(function (post) { if (pagePosition > post) { counter++; } });
-
 	}
-
 }); // end window load function
 
 
@@ -150,8 +145,7 @@ if (counter !== 1) {
         resetPagePosition();
 
     }, 500);
-
-    });
+});
 
 
     function resetPagePosition() {
@@ -231,11 +225,6 @@ if (counter !== 1) {
     overlay4.addEventListener('click', closeOverlay);
     overlay5.addEventListener('click', closeOverlay);
     overlay6.addEventListener('click', closeOverlay);
-    
-
-
-
-
 }); //end window load event listener
 
 

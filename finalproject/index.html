@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Studio 2: Every Picture Project</title>
+    <title>Final Project</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <img src="images/downarrow.png" alt="arrow" class="arrow">
+    <img src="images/downarrow.png" alt="down arrow" class="arrow">
 
     <main>
         <section id="section01" class="start">
@@ -35,7 +35,7 @@
         <section id="section03" class="offscreen">
             <article>
                 <h1>Morien</h1>
-                <img src="images/bigSun.png" alt="Sun" class="sun">
+                <img src="images/bigSun.png" alt="white sun with shadow" class="sun">
                 <p>This system is newest and more untamed, it's inhabited world is named Dantu.</p>
                     <p class="click">Click the planet for more information!</p>
             </article>
@@ -44,7 +44,7 @@
         <section id="section04" class="offscreen">
             <article>
                 <h1>Imperion</h1>
-                <img src="images/bigSun.png" alt="Sun" class="sun">
+                <img src="images/bigSun.png" alt="white sun with shadow" class="sun">
                 <p>This star system is home to the world of water, one of the wonders of the realm.</p>
                     <p class="click">Click the planet for more information!</p>
             </article>
@@ -53,7 +53,7 @@
         <section id="section05" class="offscreen">
             <article>
                 <h1>Bennu</h1>
-                <img src="images/bigSun.png" alt="Sun" class="sun">
+                <img src="images/bigSun.png" alt="white sun with shadow" class="sun">
                 <p>This star system is home to Paibu, a world of jungle.</p>
                     <p class="click">Click the planet for more information!</p>
             </article>
@@ -62,7 +62,7 @@
         <section id="section06" class="offscreen">
             <article>
                 <h1>Astrum</h1>
-                <img src="images/bigSun.png" alt="Sun" class="sun">
+                <img src="images/bigSun.png" alt="white sun with shadow" class="sun">
                 <!-- <img src="images/Eurus.png" alt="Castan" class="eurus"> -->
                 <p>This was first solar system of mankind, home to the planet Castan.</p>
                     <p class="click">Click the planet for more information!</p>
@@ -71,21 +71,15 @@
     </main>
 
    <!--  overlays -->
+   <div id="overlay1" class="hideoverlay"></div>
 
-   <div id="overlay1" class="hideoverlay">
-
-   </div>
-
-   <div id="overlay2" class="hideoverlay">
-
-   </div>
+   <div id="overlay2" class="hideoverlay"></div>
 
     <div id="overlay3" class="hideoverlay">
         <article id="format3">
             <h1>Dantu</h1>
-            <img src="images/Paibu.png" alt="Paibu" id="paibu" width="600">
-            <img src="images/galata.png" alt="Galata" id="galata" width="200">
-            <img src="images/x.png" alt="x" id="x1" class="x">
+            <img src="images/Paibu.png" alt="ai rendered landscape" id="paibu" width="600">
+            <img src="images/galata.png" alt="computer drawn planet" id="galata" width="200">
             <button id="button3">Exit</button>
             <p>The untamed world, the Emberlan Expanse is a vast region of tundra and forests seen by few. One of
                 the few places in Cosmere where flora and fauna is more abundant than people.</p>
@@ -95,9 +89,8 @@
     <div id="overlay4" class="hideoverlay">
         <article id="format4">
             <h1>Eurus</h1>
-            <img src="images/Castan.png" alt="Castan" id="castan" width="600">
-            <img src="images/taris.png" alt="Taris" id="taris" width="200">
-            <img src="images/x.png" alt="x" id="x2" class="x">
+            <img src="images/Castan.png" alt="ai rendered landscape" id="castan" width="600">
+            <img src="images/taris.png" alt="computer drawn planet" id="taris" width="200">
             <button id="button4">Exit</button>
             <p>A world of water, the single large continent is host to the vast 10,000 year old capital city called
                 Auran.</p>
@@ -107,9 +100,8 @@
     <div id="overlay5" class="hideoverlay">
         <article id="format5">
             <h1>Paibu</h1>
-            <img src="images/Caran.png" alt="Dantu" id="caran" width="600">
-            <img src="images/lothen.png" alt="Lothen" id="lothen" width="200">
-            <img src="images/x.png" alt="x" id="x3" class="x">
+            <img src="images/Caran.png" alt="ai rendered landscape" id="caran" width="600">
+            <img src="images/lothen.png" alt="computer drawn planet" id="lothen" width="200">
             <button id="button5">Exit</button>
             <p>A world of jungle wood and sweltering heat, long ago the great stone cities rose high
                 above the canopy but now decay.</p>
@@ -119,36 +111,28 @@
     <div id="overlay6" class="hideoverlay">
         <article id="format6">
             <h1>Castan</h1>
-            <img src="images/Eurus.png" alt="Eurus" id="eurus" width="600">
-            <img src="images/cask.png" alt="Cask" id="cask" width="200">
-            <img src="images/x.png" alt="x" id="x4" class="x">
+            <img src="images/Eurus.png" alt="ai rendered landscape" id="eurus" width="600">
+            <img src="images/cask.png" alt="computer drawn planet" id="cask" width="200">
             <button id="button6">Exit</button>
             <p>The homeworld of all mankind, a great ecumenopolis of concrete and neon. The once green and natural
                 surface of the entire world now sits in the darkness of the buried “first level”.</p>
         </article>
     </div>
 
-
-
-
-
-
-
-
     <button id="button">CLICK</button>
 
     <div id="fig1">
-        <img src="images/extraStars16.svg" alt="extra stars" class="stars1" id="extra">
+        <img src="images/extraStars16.svg" alt="stars with solar system outline" class="stars1" id="extra">
     </div>
 
 
     <div id="fig2">
-        <img src="images/extraStars.png" alt="second layer stars" class="extra1" id="more">
+        <img src="images/extraStars.png" alt="small stars" class="extra1" id="more">
     </div>
 
 
     <figure>
-        <img src="images/stars.png" alt="stars" class="picture1" id="starsfig">
+        <img src="images/stars.png" alt="black background with stars" class="picture1" id="starsfig">
     </figure>
 </body>
 

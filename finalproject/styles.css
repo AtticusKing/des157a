@@ -118,14 +118,6 @@ figure img {
     transition: 3s ease;
 }
 
-
-
-
-
-
-
-
-
 section {
     box-sizing: border-box;
     /* border: 5px solid #d3e019; */
@@ -173,11 +165,6 @@ section {
     left: 300px;
 }
 
-
-
-
-
-
 .stars1{
     top: -30%;
     left: 12%;
@@ -222,8 +209,6 @@ section {
     transition: 3s ease;
 }
 
-
-
 .caran {
     max-height: 100px;
     width: auto;
@@ -243,7 +228,6 @@ section {
     max-height: 100px;
     width: auto;
 }
-
 
 .extra1{
     top: -30%;
@@ -294,17 +278,10 @@ header {
     height: 400px;
 }
 
-/* overflow: hidden; */
-
-
 .sun {
     max-height: 50px;
     width: auto; 
 }
-
-
-
-
 
 .start {
     background-color: #464C4F;
@@ -327,7 +304,6 @@ header {
     width: 140px;
     height: auto;
 }
-
 
 .button1 {
     width: 750px;
@@ -397,42 +373,6 @@ header {
     background-color: black;
     z-index: 15;
     opacity: 0;
-}
-
-.x {
-    position: absolute;
-    z-index: 20;
-    width: 30px;
-    height: auto;
-    display: none;
-}
-
-#x1{
-    left: 1200px;
-    top: 150px;
-    cursor: pointer;
-    display: none;
-}
-
-#x2{
-    left: 1200px;
-    top: 150px;
-    cursor: pointer;
-    display: none;
-}
-
-#x3{
-    left: 1200px;
-    top: 150px;
-    cursor: pointer;
-    display: none;
-}
-
-#x4{
-    left: 1260px;
-    top: 90px;
-    cursor: pointer;
-    display: none;
 }
 
 #overlay1 {
@@ -515,7 +455,6 @@ header {
     padding-top: 100px;
 }
 
-/* 6th overlay */
 #format6 {
     margin: 100px;
 }
@@ -562,11 +501,9 @@ header {
     left: 150px;
 }
 
-
 #format6 article{
     border: 3px solid white;
 }
-
 
 #button6 {
     border: 3px solid #333333;
@@ -584,12 +521,6 @@ header {
     top: 555px;
     left: 175px; 
 }
-
-
-
-
-
-
 
 #format5 {
     margin: 100px;
@@ -637,11 +568,9 @@ header {
     left: 150px;
 }
 
-
 #format5 article{
     border: 3px solid white;
 }
-
 
 #button5 {
     border: 3px solid #333333;
@@ -659,10 +588,6 @@ header {
     top: 555px;
     left: 175px; 
 }
-
-
-
-
 
 #format4 {
     margin: 100px;
@@ -710,11 +635,9 @@ header {
     left: 150px;
 }
 
-
 #format4 article{
     border: 3px solid white;
 }
-
 
 #button4 {
     border: 3px solid #333333;
@@ -732,10 +655,6 @@ header {
     top: 555px;
     left: 175px; 
 }
-
-
-
-
 
 #format3 {
     margin: 100px;
@@ -783,11 +702,9 @@ header {
     left: 150px;
 }
 
-
 #format3 article{
     border: 3px solid white;
 }
-
 
 #button3 {
     border: 3px solid #333333;
@@ -804,4 +721,42 @@ header {
     position: absolute;
     top: 555px;
     left: 175px; 
+}
+
+#fig3{
+    top: 50%;
+    transform:translateY(-50%);
+}
+
+#solar{
+    top: 50%;
+    transform:translateY(-50%);
+}
+
+.morien{
+    top: 50%;
+    transform:translateY(-50%);
+    
+    z-index: 30;
+}
+
+.imperion{
+    top: 50%;
+    transform:translateY(-50%);
+    transform: scale(.0005);
+    z-index: 30;
+}
+
+.bennu{
+    top: 50%;
+    transform:translateY(-50%);
+    transform: scale(.0005);
+    z-index: 30;
+}
+
+.astrum{
+    top: 50%;
+    transform:translateY(-50%);
+    transform: scale(.0005);
+    z-index: 30;
 }
