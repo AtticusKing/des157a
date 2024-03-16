@@ -209,26 +209,6 @@ section {
     transition: 3s ease;
 }
 
-.caran {
-    max-height: 100px;
-    width: auto;
-}
-
-.paibu {
-    max-height: 100px;
-    width: auto;
-}
-
-.castan {
-    max-height: 100px;
-    width: auto;
-}
-
-.eurus {
-    max-height: 100px;
-    width: auto;
-}
-
 .extra1{
     top: -30%;
     left: 12%;
